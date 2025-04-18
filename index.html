@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>Easy Farmer</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        .selector-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 330px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .selector-button {
+            background-color: #39b54a;
+            color: white;
+            font-weight: 600;
+            padding: 12px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            flex: 1;
+            text-align: center;
+            margin: 0 5px;
+        }
+
+        .disable-button {
+            background-color: pink !important;
+            opacity: 0.5 !important;
+        }
+
+        .btn-checkGPT {
+            padding: 12px 18px;
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #39b54a;
+            color: white;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- header 
+   ================================================== -->
+    <header id="header" class="row">
+
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="/images/logo4.svg" alt="">
+            </a>
+        </div>
+
+        <nav id="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#home" title="home">Trang chủ</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">Về chúng tôi</a></li>
+                <li><a class="smoothscroll" href="#pricing" title="pricing">Tư vấn</a></li>
+                <li><a class="smoothscroll" href="#testimonials" title="testimonials">Trải nghiệm AI</a></li>
+                <li><a class="smoothscroll" href="#download" title="download">Tải ngay</a></li>
+            </ul>
+
+            <a href="#" title="sign-up" class="button button-primary cta">Đăng ký</a>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Danh sách</span></a>
+
+    </header> <!-- /header -->
+
+
+    <!-- home
+   ================================================== -->
+    <section id="home" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000
+        data-natural-height=2000>
+
+        <div class="overlay"></div>
+        <div class="home-content">
+
+            <div class="row contents">
+                <div class="home-content-left">
+
+                    <h3 data-aos="fade-up">Chào mừng đến với Easy Farmer</h3>
+
+                    <h1 data-aos="fade-up">
+                        Hợp lực công nghệ<br>
+                        Chăm sóc tận tâm<br>
+                        Nâng tầm nông nghiệp Việt.
+                    </h1>
+
+                    <div class="buttons" data-aos="fade-up">
+                        <a href="#download" class="smoothscroll button stroke">
+                            <span class="icon-circle-down" aria-hidden="true"></span>
+                            Tải ứng dụng
+                        </a>
+                        <a href="https://player.vimeo.com/video/1076262545?h=71ad355c60&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            data-lity class="button stroke">
+                            <span class="icon-play" aria-hidden="true"></span>
+                            Xem video giới thiệu
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="home-image-right">
+                    <img src="images/ip-470.svg" srcset="images/ip-470.svg 1x, images/ip-940.svg 2x" data-aos="fade-up">
+                </div>
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social-list">
+            <li>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </li>
+        </ul>
+        <!-- end home-social-list -->
+
+        <div class="home-scrolldown">
+            <a href="#about" class="scroll-icon smoothscroll">
+                <span>Kéo xuống</span>
+                <i class="icon-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </section> <!-- end home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about">
+
+        <div class="row about-intro">
+
+            <div class="col-four">
+                <h1 class="intro-header" data-aos="fade-up">Giới thiệu về ứng dụng</h1>
+            </div>
+            <div class="col-eight">
+                <p class="lead" data-aos="fade-up">
+                    Easy Farmer là ứng dụng hỗ trợ toàn diện cho người nông dân, tích hợp các tính năng hiện đại như cập
+                    nhật tin tức nông nghiệp, dự báo thời tiết theo khu vực, nhận diện bệnh cây trồng bằng AI và kết nối
+                    với chuyên gia phù hợp để tư vấn và đặt lịch khám với chi phí hợp lý. Ứng dụng còn tổ chức các buổi
+                    hội thảo chia sẻ kinh nghiệm, tạo diễn đàn cộng đồng để nông dân giao lưu, và tích hợp sàn thương
+                    mại điện tử cung cấp nông sản chất lượng, phân bón và thuốc bảo vệ thực vật có nguồn gốc rõ ràng.
+                    Easy Farmer hướng đến mục tiêu nâng cao hiệu quả canh tác, kết nối cộng đồng và thúc đẩy nền nông
+                    nghiệp bền vững, hiện đại.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row about-features">
+
+            <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-window"></i></span>
+
+                    <div class="service-content">
+
+                        <h3>Thông tin nóng hổi</h3>
+
+                        <p style="text-align: justify;">
+                            - Cập nhật liên tục bản tin nông nghiệp về thị trường, cây trồng và dịch bệnh <br/>
+
+                            - Tổ chức hội thảo chuyên sâu theo từng khu vực<br/>
+                            
+                            - Xây dựng diễn đàn để nông dân trao đổi kinh nghiệm<br/>
+                            
+                            - Tích hợp thông tin thời tiết chính xác theo khu vực<br/>
+                            
+                            - Hỗ trợ nông dân lập kế hoạch canh tác hiệu quả<br/>
+                        </p>
+
+                    </div>
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-image"></i></span>
+
+                    <div class="service-content">
+                        <h3>Nhận diện bằng AI</h3>
+
+                        <p>
+                            - Tích hợp AI hiện đại để chẩn đoán bệnh cây trồng qua hình ảnh<br/>
+
+                            - Người dùng chỉ cần chụp hoặc tải ảnh cây bị bệnh<br/>
+                            
+                            - Hệ thống tự động phân tích, nhận diện dấu hiệu bất thường<br/>
+                            
+                            - Đề xuất phương án xử lý tạm thời nhanh chóng<br/>
+                            
+                            - Gợi ý kết nối với chuyên gia gần nhất để tư vấn và hỗ trợ kịp thời<br/>
+                            
+                            - Giúp tiết kiệm thời gian và nâng cao hiệu quả chăm sóc cây trồng<br/>
+                        </p>
+
+
+                    </div>
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-paint-brush"></i></span>
+
+                    <div class="service-content">
+                        <h3>Giải quyết vấn đề</h3>
+
+                        <p> - Hỗ trợ tiêu diệt sâu bệnh nhanh chóng và an toàn<br/>
+
+                            - Cung cấp giải pháp phòng trừ hiệu quả theo từng loại bệnh<br/>
+                            
+                            - Đề xuất sản phẩm thuốc bảo vệ thực vật đã được kiểm định<br/>
+                            
+                            - Đảm bảo nguồn gốc xuất xứ rõ ràng, an toàn cho cây và môi trường<br/>
+                            
+                            - Giúp kiểm soát dịch hại kịp thời, bảo vệ mùa màng và tăng năng suất<br/>
+                        </p>
+
+                    </div>
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-file"></i></span>
+
+                    <div class="service-content">
+                        <h3>Minh bạch và rõ ràng</h3>
+
+                        <p>  - Sản phẩm có giấy tờ minh bạch, nguồn gốc rõ ràng<br/>
+
+                             - Được kiểm định chất lượng chặt chẽ trước khi phân phối<br/>
+                            
+                             - Bao gồm: thuốc bảo vệ thực vật, phân bón, nông sản,...<br/>
+                            
+                             - Đáp ứng tiêu chuẩn nông nghiệp sạch, an toàn và hiệu quả<br/>
+                            
+                             - Giúp nông dân yên tâm sử dụng, người tiêu dùng tin tưởng lựa chọn<br/>
+                        </p>
+
+                    </div>
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-sliders"></i></span>
+
+                    <div class="service-content">
+                        <h3>Dễ dàng thao tác</h3>
+
+                        <p> -  Giao diện thân thiện, đơn giản và trực quan<br/>
+
+                            -  Phù hợp với mọi đối tượng, kể cả người ít rành công nghệ<br/>
+                            
+                            -  Chức năng sắp xếp rõ ràng, dễ thao tác<br/>
+                            
+                            -  Hướng dẫn chi tiết bằng tiếng Việt<br/>
+                            
+                            -  Dễ dàng tra cứu thông tin, chẩn đoán bệnh, đặt lịch tư vấn và mua sắm<br/>
+                            
+                            -  Giúp người dùng sử dụng thuận tiện và hiệu quả trong mọi hoàn cảnh<br/>
+                        </p>
+                    </div>
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-gift"></i></span>
+
+                    <div class="service-content">
+                        <h3>Ưu đãi ngập tràn</h3>
+
+                        <p> -  Hỗ trợ kỹ thuật và kết nối chuyên gia nông nghiệp<br/>
+
+                            -  Cung cấp nhiều ưu đãi hấp dẫn dành cho nông dân<br/>
+                            
+                            -  Giảm giá khi mua phân bón, thuốc bảo vệ thực vật<br/>
+                            
+                            -  Ưu đãi vận chuyển nông sản, tặng quà theo mùa vụ<br/>
+                            
+                            -  Khuyến mãi cập nhật thường xuyên, tiết kiệm chi phí<br/>
+                            
+                            -  Giúp nông dân dễ dàng tiếp cận sản phẩm chất lượng với giá hợp lý<br/>
+                        </p>
+
+                    </div>
+
+                </div> <!-- /bgrid -->
+
+            </div> <!-- end features-list -->
+
+        </div> <!-- end about-features -->
+
+        <div class="row about-how">
+
+            <h1 class="intro-header" data-aos="fade-up">Hành trình của dự án Easy Fammer
+            </h1>
+
+            <div class="about-how-content" data-aos="fade-up">
+                <div class="about-how-steps block-1-2 block-tab-full group">
+
+                    <div class="bgrid step" data-item="1">
+                        <h3>Vòng bán kết cuộc thi khởi nghiệp mùa 3
+                        </h3>
+                        <img src="/images/sk1.png" alt="Vòng bán kết cuộc thi khởi nghiệp mùa 3" srcset="">
+                        <p>Easy Farmer đã vượt qua rất nhiều ý tưởng khác để lọt vào vòng bán kết – đánh dấu cột mốc đầu
+                            tiên trên hành trình hiện thực hóa dự án.
+                        </p>
+                    </div>
+
+                    <div class="bgrid step" data-item="2">
+                        <h3>Workshop cùng giám phó giám đốc công ty Sài Gòn coo.p
+                        </h3>
+                        <img src="/images/sk2.png" alt="Workshop cùng giám phó giám đốc công ty Sài Gòn coo.p"
+                            srcset="">
+                        <p>Nhóm đã có cơ hội trao đổi trực tiếp với lãnh đạo doanh nghiệp, nhận được những góp ý quý giá
+                            để hoàn thiện sản phẩm và mô hình vận hành.
+                        </p>
+                    </div>
+
+                    <div class="bgrid step" data-item="3">
+                        <h3>Dự án dành được giải quán quân cuộc thi khởi sự
+                        </h3>
+                        <img src="/images/sk3.png" alt="Dự án dành được giải quán quân cuộc thi khởi sự" srcset="">
+                        <p>Easy Farmer vinh dự nhận giải quán quân với phần thưởng 3 triệu đồng – không chỉ là động lực,
+                            mà còn là sự công nhận cho ý tưởng sáng tạo và khả năng thực thi.
+                        </p>
+                    </div>
+
+                    <div class="bgrid step" data-item="4">
+                        <h3>Dự án nhận được lời ngỏ ý của công ty cp xe khách phương trang
+                        </h3>
+                        <img src="/images/sk4.png" alt="Dự án nhận được lời ngỏ ý của công ty cp xe khách phương trang"
+                            srcset="">
+                        <p>Chị Ngô Thùy Phương Thanh – Trưởng ban truyền thông và marketing – đánh giá cao ý nghĩa xã
+                            hội và tiềm năng phát triển bền vững của Easy Farmer.
+                        </p>
+                    </div>
+
+                </div>
+            </div> <!-- end about-how-content -->
+
+        </div> <!-- end about-how -->
+
+        <div class="row about-bottom-image">
+
+            <img src="images/tt2.svg" srcset="images/tt1.svg 600w, 
+                        images/tt2.svg 1200w, 
+                        images/tt3.svg 2800w" sizes="(max-width: 2800px) 100vw, 2800px"
+                alt="App Screenshots" data-aos="fade-up">
+
+        </div> <!-- end about-bottom-image -->
+
+    </section> <!-- end about -->
+
+
+    <!-- pricing
+    ================================================== -->
+    <section id="pricing">
+        <div class="row pricing-content">
+
+            <div class="col-four pricing-intro">
+                <h1 class="intro-header" data-aos="fade-up">Đăng ký thành viên</h1>
+
+                <p data-aos="fade-up">Đăng ký thành viên miễn phí để cập nhật tin tức nông nghiệp, chia sẻ kinh nghiệm
+                    cùng cộng đồng và sử dụng các tính năng cơ bản, sử dụng AI nhận diện bệnh nâng cao, đặt lịch tư vấn
+                    trực tiếp. Với gói thành viên trả phí, bạn sẽ
+                    được gói chăm sóc
+                    và tư vấn của chuyên gia hàng tháng, đặc biệt hơn bạn sẽ nhận được các ưu đãi độc quyền trên sàn
+                    thương mại điện tử
+                    <br />
+                    👉 Hãy lựa chọn gói phù hợp và đồng hành cùng Easy Farmer trên hành trình làm nông thông minh, hiệu
+                    quả hơn mỗi ngày!
+                </p>
+            </div>
+
+            <div class="col-eight pricing-table">
+                <div class="row">
+
+                    <div class="col-six plan-wrap">
+                        <div class="plan-block" data-aos="fade-up">
+
+                            <div class="plan-top-part">
+                                <h3 class="plan-block-title">Thành viên thường</h3>
+                                <p class="plan-block-price">0 <sup>đ</sup></p>
+                                <p class="plan-block-per"> Tháng</p>
+                            </div>
+
+                            <div class="plan-bottom-part">
+                                <ul class="plan-block-features">
+                                    <li><span>Nhận</span> bản tin mới nhất</li>
+                                    <li><span>Nhận</span> tư vấn AI</li>
+                                    <li><span>Nhận</span> sản phảm chất lượng</li>
+                                    <li><span>Nhận</span> ưu đãi ngập tràn</li>
+                                </ul>
+
+                                <a class="button button-primary large" href="">Nhận ngay</a>
+                            </div>
+
+                        </div>
+                    </div> <!-- end plan-wrap -->
+
+                    <div class="col-six plan-wrap">
+                        <div class="plan-block primary" data-aos="fade-up">
+
+                            <div class="plan-top-part">
+                                <h3 class="plan-block-title">Thành viên thân thiết</h3>
+                                <p class="plan-block-price">120.000 <sup>đ</sup></p>
+                                <p class="plan-block-per"> Tháng</p>
+                            </div>
+
+                            <div class="plan-bottom-part">
+                                <ul class="plan-block-features">
+                                    <li><span>Nhận</span> bản tin mới nhất</li>
+                                    <li><span>Nhận</span> tư vấn AI</li>
+                                    <li><span>Nhận</span> sản phảm chất lượng</li>
+                                    <li><span>Nhận</span> ưu đãi ngập tràn</li>
+                                    <li><span>Nhận</span> 1 lần tư vấn và chăm sóc từ chuyên gia miễn phí</li>
+                                    <li><span>Nhận</span> các ưu đãi đặc biệt khi mua hàng hoặc đặt lịch</li>
+                                    <li><span>Nhận</span> huy hiệu khách hàng thân thiết</li>
+                                </ul>
+
+                                <a class="button button-primary large" href="">Nhận ngay</a>
+                            </div>
+
+                        </div>
+                    </div> <!-- end plan-wrap -->
+
+                </div>
+            </div> <!-- end pricing-table -->
+
+        </div> <!-- end pricing-content -->
+    </section> <!-- end pricing -->
+
+    <section id="testimonials">
+
+        <div class="row">
+            <div class="col-twelve">
+                <h1 class="intro-header" data-aos="fade-up">Đây là phiên bản AI được phát triển bởi đội ngũ của chúng
+                    tôi.</h1>
+            </div>
+        </div>
+
+        <div class="row owl-wrap">
+
+            <div id="testimonial-slider" data-aos="fade-up">
+
+                <div class="slides owl-carousel">
+
+                    <div>
+
+                        <textarea id="inputTextAi" rows="1"
+                            style="overflow:hidden; resize:none; width:100%; line-height:1.5; max-height: 12em;"
+                            placeholder="Nhập nội dung của bạn cho AI"></textarea>
+
+                        <input id="inputVideoAi" type="file" placeholder="Vui lòng chọn ảnh">
+                        <div class="btn-checkGPT">
+                            Gửi
+                        </div>
+
+                    </div>
+
+                </div> <!-- end slides -->
+
+            </div> <!-- end testimonial-slider -->
+
+        </div> <!-- end flex-container -->
+
+    </section> <!-- end testimonials -->
+
+    <!-- Testimonials Section
+    ================================================== -->
+    <section id="testimonials">
+
+        <div class="row">
+            <div class="col-twelve">
+                <h1 class="intro-header" data-aos="fade-up">Đánh giá của khách hàng.</h1>
+            </div>
+        </div>
+
+        <div class="row owl-wrap">
+
+            <div id="testimonial-slider" data-aos="fade-up">
+
+                <div class="slides owl-carousel">
+
+                    <div>
+                        <p>
+                            Tôi đã sử dụng nhiều ứng dụng nông nghiệp trước đây, nhưng Easy Farmer thực sự nổi bật. Giao
+                            diện rất dễ sử dụng và những tính năng như cập nhật thời tiết theo khu vực và thông tin nông
+                            nghiệp luôn được cập nhật mới nhất, giúp tôi theo dõi tình hình và ra quyết định kịp thời.
+                            Hơn nữa, sàn thương mại điện tử của ứng dụng giúp tôi mua phân bón, thuốc trừ sâu chất lượng
+                            với giá cả hợp lý. Không chỉ vậy, các ưu đãi khuyến mãi luôn được cập nhật, giúp tiết kiệm
+                            chi phí cho tôi rất nhiều.
+                        </p>
+
+                        <div class="testimonial-author">
+                            <img src="images/avatars/user-01.jpg" alt="Author image">
+                            <div class="author-info">
+                                Nông Thị Dân
+                                <span class="position">Nông dân tại Cà Mau.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>
+                            Easy Farmer thật sự là một công cụ tuyệt vời cho người nông dân như tôi. Tính năng nhận diện
+                            bệnh cây rất hữu ích, tôi chỉ cần chụp ảnh cây trồng là AI có thể nhận diện và đưa ra lời
+                            khuyên chữa trị ngay lập tức. Ngoài ra, tôi cũng rất thích các buổi hội thảo chia sẻ kinh
+                            nghiệm từ các chuyên gia. Các chuyên gia luôn rất nhiệt tình và hỗ trợ tôi rất nhiều trong
+                            việc giải quyết các vấn đề khó khăn trong canh tác. Thực sự, tôi đã tiết kiệm được rất nhiều
+                            thời gian và công sức nhờ ứng dụng này.
+                        </p>
+
+                        <div class="testimonial-author">
+                            <img src="images/avatars/user-02.jpg" alt="Author image">
+                            <div class="author-info">
+                                Huỳnh Văn Dương
+                                <span>Nông dân tại Bình Dương.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Với tôi, Easy Farmer là một ứng dụng không thể thiếu trong công việc hàng ngày. Từ khi sử
+                            dụng, tôi không còn lo lắng về bệnh cây trồng nữa nhờ tính năng nhận diện bệnh qua hình ảnh
+                            AI. Ứng dụng giúp tôi chẩn đoán nhanh chóng và tìm được giải pháp xử lý kịp thời. Bên cạnh
+                            đó, các buổi hội thảo chia sẻ kinh nghiệm từ chuyên gia cũng giúp tôi học hỏi được rất nhiều
+                            kiến thức mới về cách chăm sóc cây trồng. Thật sự, Easy Farmer đã giúp công việc của tôi trở
+                            nên dễ dàng và hiệu quả hơn rất nhiều.
+                        </p>
+
+                        <div class="testimonial-author">
+                            <img src="images/avatars/user-03.jpg" alt="Author image">
+                            <div class="author-info">
+                                Nguyễn Văn Giang
+                                <span>Nông dân tại Kiên Giang.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- end slides -->
+
+            </div> <!-- end testimonial-slider -->
+
+        </div> <!-- end flex-container -->
+
+    </section> <!-- end testimonials -->
+
+
+    <!-- download
+    ================================================== -->
+    <section id="download">
+
+        <div class="row">
+            <div class="col-full">
+                <h1 class="intro-header" data-aos="fade-up">Tải xuống ứng dụng của chúng tôi ngay hôm nay!</h1>
+
+                <p class="lead" data-aos="fade-up">
+                    Hãy bắt đầu hành trình làm nông hiện đại, thông minh và hiệu quả hơn cùng Easy Farmer – ứng dụng
+                    được thiết kế dành riêng cho người nông dân Việt Nam. Với giao diện thân thiện, dễ sử dụng và tích
+                    hợp hàng loạt tính năng ưu việt như nhận diện bệnh cây bằng AI, cập nhật bản tin nông nghiệp, kết
+                    nối chuyên gia, dự báo thời tiết chính xác, cùng với sàn thương mại điện tử cung cấp sản phẩm uy
+                    tín, Easy Farmer mang đến một hệ sinh thái nông nghiệp toàn diện ngay trong tầm tay bạn.
+                    <br />
+                    Không chỉ vậy, người dùng còn được hưởng hàng loạt ưu đãi hấp dẫn, tiết kiệm chi phí và gia tăng
+                    hiệu quả sản xuất. Đây chính là công cụ cần thiết để bạn theo kịp xu hướng nông nghiệp số và phát
+                    triển bền vững.
+                </p>
+
+                <ul class="download-badges">
+                    <li><a href="#" title="" class="badge-appstore" data-aos="fade-up">App Store</a></li>
+                    <li><a href="#" title="" class="badge-googleplay" data-aos="fade-up">Play Store</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section> <!-- end download -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="footer-main">
+            <div class="row">
+
+                <div class="col-three md-1-3 tab-full footer-info">
+
+                    <div class="footer-logo">
+                        <img src="./images//logo4.svg" alt="logopage">
+                    </div>
+
+                    <p>
+                        Là người con của một gia đình nông dân, tôi thấu hiểu những khó khăn trong canh tác và chăm sóc
+                        mùa màng. Vì vậy, tôi tạo ra Easy Farmer với mong muốn mang công nghệ đến gần hơn với bà con,
+                        giúp việc làm nông trở nên dễ dàng và hiệu quả hơn mỗi ngày.
+                    </p>
+
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+
+
+                </div> <!-- end footer-info -->
+
+                <div class="col-three md-1-3 tab-1-2 mob-full footer-contact">
+
+                    <h4>Liên hệ</h4>
+
+                    <p>
+                        Cao đẳng FPT Polytechnic <br>
+                        Cvpm Quang Trung, Quận 12 <br>
+                        TP.Hồ Chí Minh, Việt Nam<br>
+                    </p>
+
+                    <p>
+                        easyfarmer@gmail.com <br>
+                        Phone: (+84) 123 456 78 <br>
+                        Fax: (+84) 876 543 21
+                    </p>
+
+                </div> <!-- end footer-contact -->
+
+                <div class="col-two md-1-3 tab-1-2 mob-full footer-site-links">
+
+                    <h4>Liên kết</h4>
+
+                    <ul class="list-links">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Điều khoản</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+
+                </div> <!-- end footer-site-links -->
+
+                <div class="col-four md-1-2 tab-full footer-subscribe">
+
+                    <h4>Bản tin của chúng tôi</h4>
+
+                    <p>Đăng ký nhận bản tin từ Easy Farmer để cập nhật nhanh chóng những thông tin mới nhất về thời
+                        tiết, thị trường nông sản, dịch bệnh cây trồng và các mẹo canh tác hiệu quả từ chuyên gia!</p>
+
+                    <div class="subscribe-form">
+
+                        <form id="mc-form" class="group" novalidate="true">
+
+                            <input type="email" value="" name="EMAIL" class="email" id="mc-email"
+                                placeholder="Địa chỉ email" required="">
+
+                            <input type="submit" name="subscribe" value="Gửi">
+
+                            <label for="mc-email" class="subscribe-message"></label>
+
+                        </form>
+
+                    </div>
+
+                </div> <!-- end footer-subscribe -->
+
+            </div> <!-- /row -->
+        </div> <!-- end footer-main -->
+
+
+        <div class="footer-bottom">
+
+            <div class="row">
+
+                <div class="col-twelve">
+                    <div class="copyright">
+                        <span>© Copyright Easy Farmer 2025.</span>
+                        <span>Design by <a href="http://www.styleshout.com/">Easy Farmer Team</a></span>
+                    </div>
+
+                    <div id="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"></i></a>
+                    </div>
+                </div>
+
+            </div> <!-- end footer-bottom -->
+
+        </div>
+
+    </footer>
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
